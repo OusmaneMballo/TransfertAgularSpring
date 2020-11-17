@@ -18,7 +18,6 @@ public class EmeteurController {
      public List<Emeteur> findAll(){
          return emeteurRepos.findAll();
      }
-    //    @PostMapping("/emeteur/add")
     @RequestMapping(value="/emeteur/add", method = RequestMethod.POST)
      public Emeteur add(@RequestBody Emeteur emeteur){
         return emeteurRepos.save(emeteur);
