@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RecepteurRepository extends JpaRepository<Recepteur, Integer> {
+
+    Recepteur findById(int id);
+    void deleteById(int id);
 }
