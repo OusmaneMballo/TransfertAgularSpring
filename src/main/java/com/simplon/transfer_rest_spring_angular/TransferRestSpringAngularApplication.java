@@ -9,20 +9,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class TransferRestSpringAngularApplication implements CommandLineRunner {
-    @Autowired
-    EmeteurRepository emeteurReposi;
+    /*@Autowired
+    EmeteurRepository emeteurReposi;*/
     public static void main(String[] args) {
         SpringApplication.run(TransferRestSpringAngularApplication.class, args);
     }
 
     @Override
     public void run(String... args) throws Exception {
-        Emeteur em=new Emeteur();
+        /*Emeteur em=new Emeteur();
         em.setNci("1392567323");
         em.setNom("Mballo");
         em.setPrenom("Ousmane");
         em.setTelephone("771979043");
 
-        emeteurReposi.save(em);
+        emeteurReposi.save(em);*/
     }
 }
