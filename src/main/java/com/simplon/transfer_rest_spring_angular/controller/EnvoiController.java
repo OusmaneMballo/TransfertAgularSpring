@@ -65,6 +65,11 @@ public class EnvoiController {
         return null;
     }
 
+    @RequestMapping(value = "/envoie/delete/{id}", method = RequestMethod.DELETE)
+    public int delete(@PathVariable int id ){
+        return envoieRepos.deleteById(id);
+    }
+
     public void updateEmetteur(Emeteur emeteur){
         Emeteur em=emeteurRepos.findById(emeteur.getId());
         em.setTelephone(emeteur.getTelephone());

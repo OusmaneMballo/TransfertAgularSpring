@@ -14,6 +14,7 @@ public interface EnvoieRepository extends JpaRepository<Envoie, Integer> {
     Envoie findByRecepteur_Id(int id);
     Envoie findByRecepteur_NomAndRecepteur_Prenom(String nom, String prenom);
     Envoie findByRecepteur_Tel(String tel);
+    int deleteById(int id);
     //Envoie update(Envoie envoie);
 }
 
